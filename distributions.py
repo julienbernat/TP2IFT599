@@ -31,9 +31,9 @@ for i in range(len(emotion_features)):
         sns.histplot(data[emotion_features[j]], kde=True, color='orange', label=emotion_features[j], alpha=0.5)
         
         # Ajouter des labels, un titre et une légende
-        plt.xlabel(emotion_features[i])
-        plt.ylabel(emotion_features[j])
-        plt.title(f'Distribution conjointe de {emotion_features[i]} et {emotion_features[j]} avec histogrammes')
+        plt.xlabel("Intensité du sentiment")
+        plt.ylabel("Nombre d'internautes")
+        plt.title(f'Distribution conjointe de {emotion_features[i]} et {emotion_features[j]} ')
         plt.legend()
         
         # Nommer et sauvegarder la figure dans le dossier spécifié
